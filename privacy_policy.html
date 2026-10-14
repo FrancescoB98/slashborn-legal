@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Slashborn: Hero Survivor</title>
+  <meta name="description" content="Informativa sulla Privacy e Data Safety per l'applicazione mobile Android Slashborn: Hero Survivor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f17;
+      --card-bg: #131b26;
+      --card-subtle: #1c2635;
+      --border: #243247;
+      --border-focus: #38bdf8;
+      --text: #cbd5e1;
+      --text-heading: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --accent-gold: #f59e0b;
+      --accent-green: #10b981;
+      --code-bg: #0f172a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 32px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 32px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    /* Top Nav / Lang Switcher */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .badge-play {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: var(--accent-green);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 6px;
+      background: var(--card-subtle);
+      padding: 4px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #0b0f17;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      color: var(--text-heading);
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .app-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    .app-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--code-bg);
+      color: var(--primary);
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 13px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    h2 {
+      color: var(--text-heading);
+      font-size: 21px;
+      font-weight: 700;
+      margin-top: 36px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+    }
+
+    h3 {
+      color: #e2e8f0;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    p,
+    ul,
+    ol {
+      margin-bottom: 16px;
+    }
+
+    ul,
+    ol {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .info-box {
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .info-box.gold {
+      background: rgba(245, 158, 11, 0.08);
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .info-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 20px 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--card-subtle);
+      color: var(--text-heading);
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 700;
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #fff;
+        color: #000;
+      }
+
+      .container {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+      }
+
+      .lang-switcher {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <div class="badge-play">
+        <span>✓</span> Google Play Store Conforme (2026 Policy)
+      </div>
+      <div class="lang-switcher">
+        <button id="btn-lang-it" class="lang-btn active" onclick="setLang('it')">🇮🇹 Italiano</button>
+        <button id="btn-lang-en" class="lang-btn" onclick="setLang('en')">🇬🇧 English</button>
+      </div>
+    </div>
+
+    <!-- ITALIAN VERSION -->
+    <div id="content-it" class="policy-content">
+      <header>
+        <h1>Informativa sulla Privacy</h1>
+        <div class="app-meta">
+          <span>🎮 <strong>Applicazione:</strong> Slashborn: Hero Survivor</span>
+          <span>📦 <strong>Pacchetto Android:</strong> <code>com.onlyfra.slashborn</code></span>
+          <span>📅 <strong>Ultimo aggiornamento:</strong> 15 Ottobre 2026</span>
+        </div>
+      </header>
+
+      <section>
+        <div class="info-box">
+          <p>La presente Informativa sulla Privacy descrive in maniera trasparente come l'applicazione mobile
+            <strong>Slashborn: Hero Survivor</strong> raccoglie, protegge ed elabora i dati degli utenti in piena
+            conformità con il <strong>Regolamento Generale sulla Protezione dei Dati dell'Unione Europea (GDPR -
+              Regolamento UE 2016/679)</strong>, la direttiva ePrivacy e le normative per sviluppatori di
+            <strong>Google Play Store</strong>.
+          </p>
+        </div>
+
+        <h2>1. Titolare del Trattamento dei Dati</h2>
+        <p>Il Titolare del trattamento dei dati personali dell'Applicazione è:</p>
+        <ul>
+          <li><strong>Sviluppatore:</strong> Francesco B. (Sviluppatore Indipendente)</li>
+          <li><strong>Email di contatto / Privacy:</strong> <a
+              href="mailto:support@slashborn.com">support@slashborn.com</a></li>
+          <li><strong>Paese di origine:</strong> Italia (Unione Europea)</li>
+        </ul>
+
+        <h2>2. Tipologie di Dati Trattati e Modalità di Conservazione</h2>
+
+        <h3>A. Dati di Gioco e Progressi (100% Archiviazione Locale)</h3>
+        <p>
+          Tutti i salvataggi, monete raccolte, punteggi record, armi sbloccate, opzioni grafiche e preferenze sonore
+          sono salvati <strong>esclusivamente in locale sul dispositivo dell'utente</strong> mediante
+          <code>SharedPreferences</code> e <code>LocalStorage</code>.
+        </p>
+        <p>
+          L'applicazione <strong>non gestisce server remoti proprietari</strong>, non richiede la registrazione di alcun
+          account, non raccoglie credenziali e non trasferisce né vende le informazioni di gioco a soggetti terzi.
+        </p>
+
+        <h3>B. Dati Raccolti da SDK di Terze Parti (Google AdMob & UMP SDK)</h3>
+        <p>
+          Per consentire la fruizione gratuita del gioco, l'Applicazione integra i componenti pubblicitari ufficiali di
+          <strong>Google Mobile Ads (AdMob)</strong> e la piattaforma di consenso privacy conforme allo standard IAB TCF
+          v2.2 <strong>Google User Messaging Platform (UMP SDK)</strong>.
+        </p>
+        <p>Tali librerie terze possono raccogliere e trattare automaticamente:</p>
+        <ul>
+          <li><strong>Identificatori del dispositivo:</strong> Identificatore pubblicitario Google (GAID / AAID),
+            necessario per l'erogazione di annunci o per il conteggio delle frequenze di visualizzazione.</li>
+          <li><strong>Dati di diagnostica e arresto anomalo (Crash data):</strong> Log tecnici di crash e metriche di
+            performance inviate a fini di monitoraggio della stabilità.</li>
+          <li><strong>Interazioni con i formati pubblicitari:</strong> Visualizzazione di banner inferiori (50dp) e
+            interstitial a schermo intero tra le partite, metriche di impression e click.</li>
+          <li><strong>Stato del Consenso GDPR / ePrivacy:</strong> Memorizzazione locale delle scelte di consenso
+            espresse dall'utente tramite il modulo UMP all'avvio dell'app.</li>
+        </ul>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Categoria di Dati</th>
+                <th>Finalità</th>
+                <th>Condivisione</th>
+                <th>Sicurezza</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Dati di Gioco</strong> (punteggi, upgrade)</td>
+                <td>Funzionamento offline del gioco</td>
+                <td>Nessuna (solo dispositivo)</td>
+                <td>Locale su dispositivo</td>
+              </tr>
+              <tr>
+                <td><strong>ID Pubblicitario (GAID)</strong></td>
+                <td>Annunci e prevenzione frodi AdMob</td>
+                <td>Google LLC</td>
+                <td>Crittografia HTTPS/TLS</td>
+              </tr>
+              <tr>
+                <td><strong>Stato Consenso (UMP)</strong></td>
+                <td>Adempimento normativo GDPR/ePrivacy</td>
+                <td>Google LLC</td>
+                <td>Crittografia HTTPS/TLS</td>
+              </tr>
+              <tr>
+                <td><strong>Log diagnostici di crash</strong></td>
+                <td>Risoluzione bug e stabilità</td>
+                <td>Google LLC</td>
+                <td>Crittografia HTTPS/TLS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. Finalità e Basi Giuridiche del Trattamento (GDPR)</h2>
+        <ul>
+          <li><strong>Fornitura dell'esperienza di gioco (Art. 6.1.b GDPR):</strong> Esecuzione del servizio e
+            mantenimento dei record e progressi salvati in locale.</li>
+          <li><strong>Erogazione di annunci pubblicitari (Art. 6.1.f e 6.1.a GDPR):</strong> Legittimo interesse dello
+            sviluppatore a sostenere i costi di produzione per il gioco gratuito, e <em>Consenso espresso</em> per gli
+            annunci personalizzati raccolto tramite UMP SDK nello Spazio Economico Europeo.</li>
+          <li><strong>Adempimento di obblighi legali (Art. 6.1.c GDPR):</strong> Rispetto della normativa europea sui cookie
+            e tracciamento digitale tramite interfaccia di consenso certificata.</li>
+        </ul>
+
+        <h2>4. Fornitori Terzi e Norme Correlate</h2>
+        <p>I dati gestiti dagli SDK terzi sono trattati direttamente da Google conformemente alle loro politiche:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Norme sulla Privacy di
+              Google</a></li>
+          <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Come
+              Google utilizza le informazioni provenienti da siti o app partner</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Informativa
+              sulla sicurezza dei dati per Google AdMob</a></li>
+        </ul>
+
+        <h2>5. Sicurezza dei Dati</h2>
+        <p>
+          Tutte le comunicazioni verso le API di Google avvengono mediante protocolli crittografici ad alta sicurezza
+          <strong>HTTPS / TLS 1.3</strong>, prevenendo intercettazioni non autorizzate in transito (Man-in-the-Middle).
+        </p>
+
+        <h2>6. Tutela dei Minori (Children's Privacy)</h2>
+        <p>
+          L'applicazione è progettata per un pubblico generale (PEGI 7 per violenza stilizzata non realistica) e non è
+          diretta primariamente a minori di età inferiore a 13 anni. Non raccogliamo consapevolmente dati personali da
+          bambini. Nei territori ove richiesto, l'SDK pubblicitario rispetta i flag di età minima per il consenso digitale
+          (COPPA / GDPR-K).
+        </p>
+
+        <h2>7. Diritti dell'Utente (Articoli 15-22 GDPR)</h2>
+        <p>In qualità di interessato, l'utente può in ogni momento esercitare i propri diritti:</p>
+        <ul>
+          <li><strong>Reimpostare o eliminare l'ID pubblicitario:</strong> Dalle impostazioni di sistema Android
+            (<em>Impostazioni &gt; Google &gt; Annunci &gt; Elimina ID pubblicitario</em>).</li>
+          <li><strong>Cancellazione totale dei dati locali:</strong> Dalle impostazioni del dispositivo
+            (<em>Impostazioni &gt; Applicazioni &gt; Slashborn &gt; Spazio di archiviazione &gt; Cancella dati</em>) oppure
+            tramite il pulsante "🗑️ RESETTA TUTTI I DATI" presente nel menu Impostazioni del gioco.</li>
+          <li><strong>Modifica del consenso pubblicitario:</strong> È possibile reimpostare le preferenze pubblicitarie
+            cancellando la memoria dell'applicazione per visualizzare nuovamente il modulo iniziale UMP.</li>
+          <li><strong>Contattare il Titolare:</strong> Per qualsiasi dubbio o chiarimento all'indirizzo email
+            <a href="mailto:support@slashborn.com">support@slashborn.com</a>.
+          </li>
+        </ul>
+
+        <h2>8. Modifiche a questa Informativa</h2>
+        <p>
+          Eventuali futuri aggiornamenti a queste norme saranno pubblicati su questo stesso URL pubblico permanente, con
+          l'indicazione della data di revisione aggiornata.
+        </p>
+      </section>
+
+      <footer>
+        <div>&copy; 2026 Slashborn: Hero Survivor - Sviluppato da Francesco B.</div>
+        <div>URL Norme sulla Privacy conforme alle linee guida di Google Play Console</div>
+      </footer>
+    </div>
+
+    <!-- ENGLISH VERSION -->
+    <div id="content-en" class="policy-content" style="display: none;">
+      <header>
+        <h1>Privacy Policy</h1>
+        <div class="app-meta">
+          <span>🎮 <strong>Application:</strong> Slashborn: Hero Survivor</span>
+          <span>📦 <strong>Android Package:</strong> <code>com.onlyfra.slashborn</code></span>
+          <span>📅 <strong>Last Updated:</strong> October 15, 2026</span>
+        </div>
+      </header>
+
+      <section>
+        <div class="info-box">
+          <p>This Privacy Policy describes how the mobile application <strong>Slashborn: Hero Survivor</strong>
+            collects, uses, and safeguards user data in full compliance with the <strong>European Union General Data
+              Protection Regulation (GDPR - Regulation EU 2016/679)</strong>, the ePrivacy directive, and
+            <strong>Google Play Developer Policies</strong>.
+          </p>
+        </div>
+
+        <h2>1. Data Controller</h2>
+        <p>The Data Controller for this Application is:</p>
+        <ul>
+          <li><strong>Developer:</strong> Francesco B. (Independent Developer)</li>
+          <li><strong>Contact / Privacy Email:</strong> <a
+              href="mailto:support@slashborn.com">support@slashborn.com</a></li>
+          <li><strong>Country:</strong> Italy (European Union)</li>
+        </ul>
+
+        <h2>2. Categories of Data Processed & Storage</h2>
+
+        <h3>A. Gameplay & Progress Data (100% Local Storage)</h3>
+        <p>
+          All player records, coins, unlocked weapons, hero customizations, and user settings are stored
+          <strong>strictly locally on the user's device</strong> via <code>SharedPreferences</code> and
+          <code>LocalStorage</code>.
+        </p>
+        <p>
+          The application <strong>does not maintain proprietary cloud servers</strong>, does not require user accounts or
+          logins, and does not sell or share any user gameplay data.
+        </p>
+
+        <h3>B. Third-Party SDKs (Google AdMob & UMP SDK)</h3>
+        <p>
+          To support free gameplay, the Application incorporates official SDKs from <strong>Google Mobile Ads
+            (AdMob)</strong> and the <strong>Google User Messaging Platform (UMP SDK)</strong> (IAB TCF v2.2
+          compliant).
+        </p>
+        <p>These third-party libraries may collect:</p>
+        <ul>
+          <li><strong>Device Identifiers:</strong> Google Advertising ID (GAID / AAID) used for frequency capping and ad
+            delivery.</li>
+          <li><strong>Diagnostics & Crash Logs:</strong> Technical logs and performance metrics used to maintain stability.
+          </li>
+          <li><strong>Ad Interactions:</strong> Display impressions and clicks on bottom banners and interstitial ads.</li>
+          <li><strong>GDPR / Consent Status:</strong> Local storage of user consent preferences selected via the UMP
+            dialog.</li>
+        </ul>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Purpose</th>
+                <th>Sharing</th>
+                <th>Security</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Gameplay Data</strong> (coins, wave records)</td>
+                <td>Offline game operation</td>
+                <td>None (on-device only)</td>
+                <td>Local Sandbox</td>
+              </tr>
+              <tr>
+                <td><strong>Advertising ID (GAID)</strong></td>
+                <td>Ad serving & fraud prevention</td>
+                <td>Google LLC</td>
+                <td>HTTPS / TLS Encryption</td>
+              </tr>
+              <tr>
+                <td><strong>Consent Status (UMP)</strong></td>
+                <td>GDPR / ePrivacy legal compliance</td>
+                <td>Google LLC</td>
+                <td>HTTPS / TLS Encryption</td>
+              </tr>
+              <tr>
+                <td><strong>Diagnostics / Crashes</strong></td>
+                <td>Bug fixing & performance</td>
+                <td>Google LLC</td>
+                <td>HTTPS / TLS Encryption</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. Legal Bases for Processing (GDPR)</h2>
+        <ul>
+          <li><strong>Contract Performance (Art. 6.1.b GDPR):</strong> Rendering the game and maintaining player saves.
+          </li>
+          <li><strong>Legitimate Interest & Consent (Art. 6.1.f & 6.1.a GDPR):</strong> Supporting the free-to-play model
+            via AdMob, with explicit consent collected via Google UMP for personalized ads in the EEA.</li>
+          <li><strong>Legal Obligation (Art. 6.1.c GDPR):</strong> Adhering to EU ePrivacy cookie and consent rules.</li>
+        </ul>
+
+        <h2>4. Third-Party Privacy Policies</h2>
+        <p>Data gathered via Google SDKs is processed according to Google's official privacy policies:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+          <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google
+              uses information from sites or apps that use our services</a></li>
+          <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob Data
+              Safety Guide</a></li>
+        </ul>
+
+        <h2>5. Data Security</h2>
+        <p>
+          All network communications to Google servers use secure <strong>HTTPS / TLS 1.3</strong> encryption protocols
+          to prevent data interception in transit.
+        </p>
+
+        <h2>6. Children's Privacy</h2>
+        <p>
+          The application is rated for general audiences (PEGI 7) and does not intentionally target children under 13. We
+          do not knowingly collect personally identifiable information from children.
+        </p>
+
+        <h2>7. User Rights (GDPR Articles 15-22)</h2>
+        <p>Users may exercise their rights at any time:</p>
+        <ul>
+          <li><strong>Reset/Delete Advertising ID:</strong> On Android via <em>Settings &gt; Google &gt; Ads &gt; Delete
+              advertising ID</em>.</li>
+          <li><strong>Delete Game Data:</strong> Via Android <em>Settings &gt; Apps &gt; Slashborn &gt; Storage &gt; Clear
+              Data</em>, or via the in-game "🗑️ Reset Data" button in Settings.</li>
+          <li><strong>Contact Developer:</strong> Email <a
+              href="mailto:support@slashborn.com">support@slashborn.com</a>.</li>
+        </ul>
+
+        <h2>8. Updates</h2>
+        <p>Any updates to this policy will be published directly at this permanent URL.</p>
+      </section>
+
+      <footer>
+        <div>&copy; 2026 Slashborn: Hero Survivor - Developed by Francesco B.</div>
+        <div>Public Privacy Policy URL compliant with Google Play Console requirements</div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.getElementById('content-it').style.display = (lang === 'it') ? 'block' : 'none';
+      document.getElementById('content-en').style.display = (lang === 'en') ? 'block' : 'none';
+      document.getElementById('btn-lang-it').classList.toggle('active', lang === 'it');
+      document.getElementById('btn-lang-en').classList.toggle('active', lang === 'en');
+      document.documentElement.lang = lang;
+    }
+  </script>
+</body>
+
+</html>
